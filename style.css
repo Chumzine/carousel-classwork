@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+main {
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fade 2s infinite;
+}
+
+main nav {
+    display: flex;
+    gap: 2px;
+    justify-content: space-between;
+    flex: 1;
+}
+button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    
+}
+button:hover {
+    filter: brightness(90%);
+    background-color: #000;
+    color: #fff;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+@keyframes fade {
+    /* 0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    } */
+    from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+}
